@@ -17,6 +17,7 @@
   --font-mx: 15px;
   --font-sm: 14px;
   --font-sx: 12px;
+  --font-mv: 70px;
   --line-height-loose: 1.75;
   --line-height-normal: 1.5;
   --line-height-dense: 1.1;
@@ -31,6 +32,7 @@
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
 }
+
 /* Box sizing rules */
 *,
 *::before,

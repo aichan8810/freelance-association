@@ -1,0 +1,90 @@
+
+
+#mv{
+  position: relative;
+  padding-bottom: 150px;
+}
+.hero-texts{
+  padding: 333px 0 0 0;
+  width: var(--width-pc-fix);
+  margin: 0 auto;
+}
+
+.hero-title{
+  letter-spacing: var(--base-spacing);
+  font-size: var(--font-mv);
+  margin-bottom: 50px;
+  font-family: 'hiragino_3';
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title::before{
+  content: 'Freelance Asociation Message';
+  font-size: 10px;
+}
+.hero-exp{
+  font-size: var(--font-lg);
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+.base-btn{
+  width: 200px;
+  height: 70px;
+  background-color: #63c4df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: var(--font-md);
+  color: white;
+  box-shadow: 0px 5px 45px 0px rgba(71, 139, 147, 0.65),0px 10px 25px 0px rgba(186, 244, 255, 0.3);
+  transition: all .5s;
+}
+.base-btn:hover{
+  box-shadow: none;
+}
+#left-svg{
+  position: absolute;
+  top: 276px;
+  bottom: auto;
+  left: -500px;
+  right: auto;
+  margin: auto;
+  z-index: -1;
+  filter: blur(45px);
+  opacity: .5;
+}
+
+
+/* responsible */
+@media(max-width: 1439px){
+  .hero-texts{
+    width: var(--width-pc-liquid);
+  }
+}
+@media(max-width: 640px){
+  .hero-texts{
+    width: var(--width-sp-liquid);
+  }
+  .hero-title{
+    font-size: 50px;
+  }
+  .hero-exp{
+    font-size: 5vw;
+  }
+}
+@media(max-width: 400px){
+  .hero-texts{
+    padding-top: 0;
+  }
+  .hero-title{
+    font-size: 25px;
+  }
+
+  .hero-exp{
+    font-size: 16px;
+  }
+
+}
